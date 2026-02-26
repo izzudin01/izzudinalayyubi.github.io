@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LNA Design — Izzudin</title>
+  <meta name="description" content="Low Noise Amplifier design study: common-source with resistive feedback, tradeoffs and verification mindset." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header class="container header">
+  <a class="logo" href="/">IA</a>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/projects/">Projects</a>
+    <a href="/experience/">Experience</a>
+    <a href="/about/">About</a>
+    <a href="/#contact" class="btn">Contact</a>
+  </nav>
+</header>
+
+<main class="container section">
+  <p class="muted"><a class="muted" href="/projects/">← Back to Projects</a></p>
+
+  <h1>Low Noise Amplifier (LNA) Design</h1>
+  <p class="muted">
+    Analog/RF learning project: common-source amplifier with resistive feedback, focused on design tradeoffs and structured verification.
+  </p>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>Objective</h3>
+      <ul>
+        <li>Design an LNA topology with stable biasing and predictable gain.</li>
+        <li>Understand tradeoffs: gain vs noise vs linearity vs stability.</li>
+        <li>Document design decisions and key equations/assumptions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>What It Covers</h3>
+      <ul>
+        <li>Common-source stage with resistive feedback.</li>
+        <li>Biasing strategy and small-signal parameters.</li>
+        <li>Basic performance checks (gain, bandwidth, stability concept).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>Approach</h3>
+    <ul>
+      <li>Defined target specs (gain/bandwidth constraints) and selected topology.</li>
+      <li>Calculated bias points and small-signal behavior (gm, ro, feedback effect).</li>
+      <li>Iterated component values to balance gain, input matching tendency, and stability margin.</li>
+      <li>Recorded assumptions and limitations (learning-focused scope).</li>
+    </ul>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card">
+      <h3>Tools & Tech</h3>
+      <div class="chips">
+        <span>Analog Design</span>
+        <span>Small-Signal Analysis</span>
+        <span>Feedback</span>
+        <span>Simulation (if used)</span>
+        <span>Documentation</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>UT MT Angle</h3>
+      <ul>
+        <li>Shows structured engineering thinking and tradeoff management.</li>
+        <li>Demonstrates discipline in assumptions and documentation.</li>
+        <li>Signals ability to learn complex technical topics systematically.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta" style="margin-top:14px">
+    <a class="btn ghost" href="/projects/">← Projects</a>
+    <a class="btn" href="https://github.com/izzudin01/Design-of-Low-Noise-Amplifier-LNA-Common-Source-with-Resistive-Feedback" target="_blank" rel="noreferrer">GitHub Repo</a>
+  </div>
+</main>
+
+</body>
+</html>
