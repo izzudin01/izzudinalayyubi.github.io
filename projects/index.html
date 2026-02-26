@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Izzudin Al Ayyubi</title>
+  <title>Projects — Izzudin</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
@@ -15,34 +15,172 @@
     <a href="/projects/">Projects</a>
     <a href="/experience/">Experience</a>
     <a href="/about/">About</a>
+    <a href="/#contact" class="btn">Contact</a>
   </nav>
 </header>
 
 <main class="container section">
   <h1>Projects</h1>
-  <p class="muted">Selected engineering and analytical projects.</p>
+  <p class="muted">
+    Organized by category for easier scanning.
+  </p>
 
-  <div class="grid">
-
-    <article class="card">
-      <h3>Steam → Electric Cartridge Heater Retrofit</h3>
-      <p class="muted">Industrial heating conversion + CAPEX study.</p>
-      <a class="btn ghost" href="/projects/steam-electric-retrofit/">View Details</a>
-    </article>
-
-    <article class="card">
-      <h3>Automated Manufacturing System</h3>
-      <p class="muted">Factory I/O + PLC control logic simulation.</p>
-      <a class="btn ghost" href="/projects/automated-manufacturing-system/">View Details</a>
-    </article>
-
-    <article class="card">
-      <h3>Smart Energy Meter</h3>
-      <p class="muted">ESP32-based IoT energy monitoring system.</p>
-      <a class="btn ghost" href="/projects/smart-energy-meter/">View Details</a>
-    </article>
-
+  <!-- Category quick links -->
+  <div class="toc">
+    <a href="#industrial">Industrial & Controls</a>
+    <a href="#power">Power Systems</a>
+    <a href="#iot">IoT & Monitoring</a>
+    <a href="#data">Data & Analytics</a>
+    <a href="#electronics">Electronics & Analog</a>
+    <a href="#other">Other</a>
   </div>
+
+  <!-- Industrial & Controls -->
+  <section id="industrial" class="cat">
+    <h2>Industrial & Controls</h2>
+    <p class="muted">Most relevant to operations / engineering management roles.</p>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Steam → Electric Cartridge Heater Retrofit (CAPEX Study)</h3>
+        <p class="muted">Industrial retrofit concept + control strategy + business case.</p>
+        <div class="links">
+          <a href="/projects/steam-electric-retrofit/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Automated Manufacturing System (Factory I/O + PLC)</h3>
+        <p class="muted">Sequence control simulation + PLC logic (ladder/ST).</p>
+        <div class="links">
+          <a href="/projects/automated-manufacturing-system/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Power Systems -->
+  <section id="power" class="cat">
+    <h2>Power Systems</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Overcurrent Protection Coordination (ETAP)</h3>
+        <p class="muted">Protection device coordination and system safety study.</p>
+        <div class="links">
+          <a href="/projects/overcurrent-protection-etap/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- IoT -->
+  <section id="iot" class="cat">
+    <h2>IoT & Monitoring</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Smart Energy Meter (ESP32 + PZEM-004T)</h3>
+        <p class="muted">Energy monitoring + web dashboard + alert logic.</p>
+        <div class="links">
+          <a href="/projects/smart-energy-meter/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Air Quality Monitoring (IoT)</h3>
+        <p class="muted">Environmental sensing + logging/visualization.</p>
+        <div class="links">
+          <a href="/projects/air-quality-monitoring/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>IoT Watering System</h3>
+        <p class="muted">Basic automation: sensors → decision → actuator control.</p>
+        <div class="links">
+          <a href="/projects/watering-system/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section id="data" class="cat">
+    <h2>Data & Analytics</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Coffee Sales Trend Analysis</h3>
+        <p class="muted">Exploratory analysis + trends + business insights.</p>
+        <div class="links">
+          <a href="/projects/coffee-sales-trends/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Customer Shopping Analysis</h3>
+        <p class="muted">Segmentation/behavior insights from transactional data.</p>
+        <div class="links">
+          <a href="/projects/customer-shopping-analysis/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>MNIST Digit Recognizer</h3>
+        <p class="muted">Basic ML classification project (learning-focused).</p>
+        <div class="links">
+          <a href="/projects/mnist-digit-recognizer/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Electronics -->
+  <section id="electronics" class="cat">
+    <h2>Electronics & Analog</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Low Noise Amplifier (LNA) Design</h3>
+        <p class="muted">Analog/RF design learning project.</p>
+        <div class="links">
+          <a href="/projects/lna-design/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>CMOS Op-Amp Design</h3>
+        <p class="muted">Analog IC design basics: gain, stability, biasing.</p>
+        <div class="links">
+          <a href="/projects/cmos-opamp/">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>BJT Amplifier</h3>
+        <p class="muted">Small-signal amplifier analysis and implementation.</p>
+        <div class="links">
+          <a href="/projects/bjt-amplifier/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Other -->
+  <section id="other" class="cat">
+    <h2>Other</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>P-N Diode Fabrication (Learning)</h3>
+        <p class="muted">Semiconductor basics / device fabrication overview.</p>
+        <div class="links">
+          <a href="/projects/pn-diode-fabrication/">Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
 </main>
 
