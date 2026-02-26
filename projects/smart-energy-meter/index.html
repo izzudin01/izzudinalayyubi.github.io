@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Energy Meter — Izzudin</title>
+  <meta name="description" content="ESP32-based smart energy meter using PZEM-004T with web dashboard and alert logic." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header class="container header">
+  <a class="logo" href="/">IA</a>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/projects/">Projects</a>
+    <a href="/experience/">Experience</a>
+    <a href="/about/">About</a>
+    <a href="/#contact" class="btn">Contact</a>
+  </nav>
+</header>
+
+<main class="container section">
+  <p class="muted"><a class="muted" href="/projects/">← Back to Projects</a></p>
+
+  <h1>Smart Energy Meter (ESP32 + PZEM-004T)</h1>
+  <p class="muted">
+    IoT energy monitoring system: collect electrical parameters, publish to a web dashboard, and provide alerts for abnormal usage.
+  </p>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>Objective</h3>
+      <ul>
+        <li>Measure voltage, current, power, and energy usage.</li>
+        <li>Enable remote monitoring via web UI.</li>
+        <li>Trigger alerts / relay action when usage exceeds thresholds.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>System Overview</h3>
+      <ul>
+        <li>Sensor: PZEM-004T for measurement.</li>
+        <li>Controller: ESP32 (firmware in C++).</li>
+        <li>UI: lightweight web page (HTML/CSS/JS).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>My Contribution</h3>
+    <ul>
+      <li>Integrated sensor reading + validation logic.</li>
+      <li>Built web interface for real-time monitoring (simple and responsive).</li>
+      <li>Implemented alert/notification logic and actuator control (relay) for abnormal conditions.</li>
+      <li>Documented wiring and basic safety considerations (isolation, fuse/MCB concept).</li>
+    </ul>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card">
+      <h3>Tools & Tech</h3>
+      <div class="chips">
+        <span>ESP32</span>
+        <span>C++</span>
+        <span>PZEM-004T</span>
+        <span>HTML/CSS/JS</span>
+        <span>Basic IoT</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Why It Matters (Operations Angle)</h3>
+      <ul>
+        <li>Creates visibility of energy usage (supports cost awareness).</li>
+        <li>Enables early detection of abnormal consumption.</li>
+        <li>Practical foundation for preventive maintenance and energy-saving initiatives.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="links" style="margin-top:14px">
+    <a href="/projects/">← Projects</a>
+    <a href="/about/">About Me</a>
+  </div>
+</main>
+
+</body>
+</html>
