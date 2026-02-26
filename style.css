@@ -115,3 +115,28 @@ h2{margin:0 0 10px 0;font-size:28px}
   .grid.two{grid-template-columns:1fr}
   h1{font-size:36px}
 }
+
+/* Projects page: category quick links */
+.toc{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:14px 0 22px 0;
+}
+.toc a{
+  color: var(--text);
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.14);
+  padding:8px 10px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:13px;
+  background: rgba(255,255,255,.03);
+}
+.toc a:hover{border-color: rgba(255,255,255,.30)}
+
+.cat{
+  margin-top: 26px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
