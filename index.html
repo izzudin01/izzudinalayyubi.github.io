@@ -4,124 +4,130 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Izzudin Al Ayyubi — Portfolio</title>
-  <meta name="description" content="Portfolio of Izzudin Al Ayyubi: Electrical Engineering, controls, CAPEX, automation projects." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Izzudin Al Ayyubi: industrial problem solving, techno-economic analysis, and engineering projects." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header class="container header">
     <a class="logo" href="/">IA</a>
-
     <nav class="nav">
       <a href="/">Home</a>
       <a href="/projects/">Projects</a>
       <a href="/experience/">Experience</a>
       <a href="/about/">About</a>
-      <a href="/#contact" class="btn">Contact</a>
+      <a href="#contact" class="btn">Contact</a>
     </nav>
   </header>
-  
-  
-  <main id="top">
-    <section class="container hero">
-      <div>
-        <p class="tag">Electrical Engineering • Controls • Techno-economic</p>
-        <h1>Izzudin Al Ayyubi</h1>
-        <p class="subtitle">
-          I build practical engineering solutions—electrical design, control concept, simulation,
-          and ROI/NPV analysis for industrial projects.
-        </p>
 
-        <div class="cta">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="https://github.com/izzudin01" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/izzudinalayyubi/" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
+  <main>
+    <!-- Editorial header -->
+    <section class="container section">
+      <p class="tag">Industrial Problem Solving • Techno-Economic Analysis • Engineering Documentation</p>
+      <h1>Izzudin Al Ayyubi</h1>
+      <p class="subtitle">
+        Electrical Engineering graduate (Universitas Indonesia, GPA 3.49) with industrial internship experience.
+        I translate technical issues into structured options, risks, and business impact.
+        Currently targeting <b>United Tractors Management Trainee</b>.
+      </p>
 
-        <div class="mini">
-          <span>📍 Indonesia</span>
-          <span>🎓 Universitas Indonesia (EE)</span>
-        </div>
+      <div class="cta">
+        <a class="btn" href="/projects/">View Projects</a>
+        <a class="btn ghost" href="/experience/">Experience</a>
+        <a class="btn ghost" href="/about/">About</a>
+        <a class="btn ghost" href="https://github.com/izzudin01" target="_blank" rel="noreferrer">GitHub</a>
+        <!-- Optional -->
+        <!-- <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a> -->
       </div>
 
-      <div class="card hero-card">
-        <h3>Highlights</h3>
-        <ul>
-          <li>Controls concept: on-off → PI/PID time-proportional (industrial temperature control)</li>
-          <li>Thermal modeling & validation approach (COMSOL / FOPDT)</li>
-          <li>Business case: CAPEX justification (ROI / NPV / IRR)</li>
-        </ul>
+      <!-- Quick facts row -->
+      <div class="facts">
+        <div class="fact">
+          <div class="fact-k">Location</div>
+          <div class="fact-v">Indonesia</div>
+        </div>
+        <div class="fact">
+          <div class="fact-k">Education</div>
+          <div class="fact-v">Universitas Indonesia (EE)</div>
+        </div>
+        <div class="fact">
+          <div class="fact-k">Strength</div>
+          <div class="fact-v">CAPEX / ROI / NPV + industrial systems</div>
+        </div>
+        <div class="fact">
+          <div class="fact-k">Tools</div>
+          <div class="fact-v">Excel, AutoCAD, ETAP, PLC, basic simulation</div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="container section">
-      <h2>Projects</h2>
+    <!-- Featured Projects (keep short and strong) -->
+    <section class="container section" id="projects">
+      <h2>Featured Projects</h2>
+      <p class="muted">Selected work most relevant for operations / MT roles. Full list is on the Projects page.</p>
 
       <div class="grid">
         <article class="card">
-          <h3>Steam → Electric Cartridge Heater Retrofit (CAPEX Study)</h3>
-          <p class="muted">Bridgestone Tire Indonesia — rework press heating conversion concept + control + ROI.</p>
-          <ul>
-            <li>Target: stable mold temperature 164 ± 2°C</li>
-            <li>Defined protection philosophy: interlocks, over-temp, grounding</li>
-            <li>Delivered techno-economic model: ROI/NPV/IRR</li>
-          </ul>
+          <h3>Steam → Electric Heater Retrofit (CAPEX Study)</h3>
+          <p class="muted">Industrial retrofit concept + control strategy + investment justification.</p>
           <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Case Notes</a>
-            <a href="#" target="_blank" rel="noreferrer">Slides/PDF</a>
+            <a href="/projects/steam-electric-retrofit/">Details</a>
+            <a href="https://github.com/izzudin01/steam-electric-retrofit" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Overcurrent Protection Coordination (ETAP)</h3>
+          <p class="muted">Protection coordination/selectivity review using TCC curves.</p>
+          <div class="links">
+            <a href="/projects/overcurrent-protection-etap/">Details</a>
+            <a href="https://github.com/izzudin01/overcurrent-protection-coordination-etap" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
 
         <article class="card">
           <h3>Smart Energy Meter (ESP32 + PZEM-004T)</h3>
-          <p class="muted">IoT energy monitoring with web dashboard + abnormal usage notification.</p>
-          <ul>
-            <li>ESP32 firmware (C++)</li>
-            <li>Web UI (HTML/CSS/JS)</li>
-            <li>Relay control + alert logic</li>
-          </ul>
+          <p class="muted">IoT energy monitoring + dashboard + alert logic.</p>
           <div class="links">
-            <a href="https://github.com/izzudin01/smart-energy-meter" target="_blank" rel="noreferrer">GitHub Repo</a>
-            <a href="#" target="_blank" rel="noreferrer">Demo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Automated Manufacturing System (Factory I/O + PLC)</h3>
-          <p class="muted">3D simulation + Modicon M221 PLC ladder/structured text control.</p>
-          <ul>
-            <li>Sequence control: machining center + assembler</li>
-            <li>Debugging & optimization in simulation</li>
-            <li>Safety interlocks concept</li>
-          </ul>
-          <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Project Summary</a>
-            <a href="https://github.com/izzudin01/automated-manufacturing-system" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="/projects/smart-energy-meter/">Details</a>
+            <a href="https://github.com/izzudin01/smart-energy-meter" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
       </div>
+
+      <div class="cta" style="margin-top:14px">
+        <a class="btn ghost" href="/projects/">View All Projects</a>
+      </div>
     </section>
 
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
+    <!-- Skills (brief) -->
+    <section class="container section" id="skills">
+      <h2>Skills Snapshot</h2>
       <div class="grid two">
+        <div class="card">
+          <h3>Industrial / Business</h3>
+          <div class="chips">
+            <span>CAPEX Justification</span>
+            <span>ROI / NPV / IRR</span>
+            <span>Risk Register</span>
+            <span>Stakeholder Coordination</span>
+            <span>Reporting</span>
+          </div>
+        </div>
         <div class="card">
           <h3>Engineering</h3>
           <div class="chips">
-            <span>Electrical Design</span><span>Industrial Controls</span><span>Safety/Interlocks</span>
-            <span>Instrumentation</span><span>Root Cause</span>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Tools</h3>
-          <div class="chips">
-            <span>AutoCAD Electrical</span><span>COMSOL</span><span>MATLAB/Simulink</span>
-            <span>Excel (ROI/NPV)</span><span>PLC (Ladder/ST)</span>
+            <span>Electrical Design</span>
+            <span>Controls Concept</span>
+            <span>Protection Basics</span>
+            <span>PLC Logic</span>
+            <span>IoT Prototyping</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="container section">
+    <!-- Experience teaser -->
+    <section class="container section" id="experience">
       <h2>Experience</h2>
       <div class="card">
         <div class="row">
@@ -132,30 +138,33 @@
           <p class="muted">Oct 2025 – Present</p>
         </div>
         <ul>
-          <li>Developed electrical/control concepts, documentation, and safety assessments for plant equipment.</li>
-          <li>Contributed to CAPEX study for heating retrofit; built ROI/NPV/IRR evaluation model.</li>
-          <li>Supported thermal + control behavior modeling workflow (COMSOL + control block design).</li>
+          <li>Developed design concepts and documentation for industrial equipment improvements.</li>
+          <li>Supported CAPEX study with technical feasibility + ROI/NPV evaluation.</li>
+          <li>Maintained risk register and safety philosophy to support safe execution.</li>
         </ul>
+        <div class="links">
+          <a href="/experience/">Read full experience →</a>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="container section">
+    <!-- Contact -->
+    <section class="container section" id="contact">
       <h2>Contact</h2>
       <div class="card contact">
-        <p>Want to discuss projects or roles? Reach me here:</p>
+        <p class="muted">Open to discussion for MT and operations-related roles.</p>
         <div class="contact-row">
-          <button class="btn" id="copyEmail" type="button">Copy Email</button>
-          <a class="btn ghost" href="mailto:izzudin.al01@ui.ac.id">izzudin.al01@ui.ac.id</a>
-        </div>
-        <div class="links">
-          <a href="https://github.com/izzudin01" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/izzudinalayyubi/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:izzudin.al01@ui.ac.id">Email</a>
+          <a class="btn ghost" href="https://github.com/izzudin01" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Optional -->
+          <!-- <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a> -->
         </div>
       </div>
+
       <footer class="footer muted">© <span id="year"></span> Izzudin Al Ayyubi</footer>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
