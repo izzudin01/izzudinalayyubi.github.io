@@ -210,3 +210,37 @@ h3{margin:0 0 8px 0}
   .grid.two{grid-template-columns:1fr}
   h1{font-size:36px}
 }
+
+/* Home page: quick facts row (editorial style) */
+.facts{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:12px;
+  margin-top:16px;
+}
+.fact{
+  border:1px solid var(--line);
+  background: var(--card);
+  border-radius:12px;
+  padding:12px 14px;
+  box-shadow: none;
+}
+.fact-k{
+  font-size:12px;
+  font-weight:800;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.fact-v{
+  margin-top:6px;
+  font-weight:700;
+  color: var(--text);
+}
+
+@media (max-width: 980px){
+  .facts{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px){
+  .facts{ grid-template-columns: 1fr; }
+}
