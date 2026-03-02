@@ -275,9 +275,12 @@ h3{margin:0 0 8px 0}
 
 .edu-logo-wide{
   display:block;
-  width:100%;
-  max-width:420px;   /* bigger */
-  height:auto;       /* keep original ratio */
+  height:48px;
+  width:auto;
   object-fit:contain;
-  margin-bottom:10px;
+  margin-bottom:8px;
+}
+
+@media (max-width: 520px){
+  .edu-logo-wide{ height:40px; }
 }
