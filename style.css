@@ -284,3 +284,34 @@ h3{margin:0 0 8px 0}
 @media (max-width: 520px){
   .edu-logo-wide{ height:40px; }
 }
+
+.edu-inline{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.edu-logo{
+  height:44px;     /* adjust 36–52px */
+  width:auto;      /* keeps ratio */
+  object-fit:contain;
+}
+
+.edu-school{
+  font-weight:800;
+  color:var(--text);
+  line-height:1.2;
+}
+
+.edu-major{
+  font-weight:700;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.2;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 520px){
+  .edu-inline{ align-items:flex-start; }
+  .edu-logo{ height:40px; }
+}
