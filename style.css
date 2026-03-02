@@ -272,3 +272,12 @@ h3{margin:0 0 8px 0}
   filter: grayscale(1) contrast(1.05);
   opacity: .92;
 }
+
+.edu-logo-wide{
+  display:block;
+  width:100%;
+  max-width:420px;   /* bigger */
+  height:auto;       /* keep original ratio */
+  object-fit:contain;
+  margin-bottom:10px;
+}
