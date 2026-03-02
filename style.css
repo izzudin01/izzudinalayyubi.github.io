@@ -78,27 +78,10 @@ h3{margin:0 0 8px 0}
 .subtitle{
   font-size: 17px;
   line-height: 1.7;
-  max-width: 62ch;       /* slightly narrower = cleaner rag */
-  text-wrap: pretty;     /* modern browsers: improves wrapping */
+  max-width: 62ch;
+  text-wrap: pretty;
 }
 .muted{color:var(--muted)}
-
-/* Hero */
-.hero{
-  display:grid;
-  grid-template-columns: 1.25fr .75fr;
-  gap:18px;
-  padding-top:26px;
-  padding-bottom:10px;
-}
-.mini{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  color:var(--muted);
-  margin-top:14px;
-  font-size:14px
-}
 
 /* Cards */
 .card{
@@ -110,8 +93,6 @@ h3{margin:0 0 8px 0}
 }
 .card ul{margin:10px 0 0 18px;color:var(--muted)}
 .card li{margin:8px 0}
-.hero-card ul{margin:10px 0 0 18px;color:var(--muted)}
-.hero-card li{margin:8px 0}
 
 /* Buttons */
 .btn{
@@ -211,16 +192,15 @@ h3{margin:0 0 8px 0}
 /* Responsive */
 @media (max-width: 980px){
   .container{padding:18px}
-  .hero{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .grid.two{grid-template-columns:1fr}
   h1{font-size:36px}
 }
 
-/* Home page: quick facts row (editorial style) */
+/* Home page: quick facts row */
 .facts{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap:12px;
   margin-top:16px;
 }
@@ -244,35 +224,51 @@ h3{margin:0 0 8px 0}
   color: var(--text);
 }
 
-@media (max-width: 980px){
-  .facts{ grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 520px){
-  .facts{ grid-template-columns: 1fr; }
-}
-
+/* Thumbnails */
 .thumb{
   width:100%;
-  aspect-ratio: 16 / 9;   /* forces uniform frame */
-  object-fit: cover;      /* crops nicely */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius:12px;
   border:1px solid var(--line);
   margin-bottom:12px;
   background:#fff;
 }
 
-/* Smaller logos in education */
-.edu-head{
+/* UI banner (wide logo) inside Education fact */
+.edu-banner-mini{
+  display:block;
+  width:100%;
+  max-width:260px;
+  height:28px;
+  object-fit:contain;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:6px 10px;
+  margin-bottom:8px;
+}
+
+/* Banner/logo header inside cards (Experience/Education) */
+.brand-head{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
+  flex-wrap:wrap;
 }
-.edu-logo{
-  width:44px;
+
+.brand-banner{
   height:44px;
+  width:auto;
+  max-width:280px;
   object-fit:contain;
-  border-radius:10px;
-  border:1px solid var(--line);
   background:#fff;
-  padding:6px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:8px 10px;
+}
+
+.brand-banner.mono{
+  filter: grayscale(1) contrast(1.05);
+  opacity: .92;
 }
