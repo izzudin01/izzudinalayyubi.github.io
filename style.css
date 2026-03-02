@@ -239,14 +239,14 @@ h3{margin:0 0 8px 0}
 .edu-banner-mini{
   display:block;
   width:100%;
-  max-width:260px;
-  height:28px;
+  max-width:360px;      /* wider */
+  height:44px;          /* taller */
   object-fit:contain;
   background:#fff;
   border:1px solid var(--line);
-  border-radius:10px;
-  padding:6px 10px;
-  margin-bottom:8px;
+  border-radius:12px;
+  padding:6px 12px;     /* slightly tighter */
+  margin-bottom:10px;
 }
 
 /* Banner/logo header inside cards (Experience/Education) */
